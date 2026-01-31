@@ -8,7 +8,10 @@
     "build": "plasmo build",
     "build:firefox": "plasmo build --target=firefox-mv3",
     "package": "plasmo package",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit"
   },
   "manifest": {
     "host_permissions": [
