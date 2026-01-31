@@ -1,13 +1,26 @@
 {
-  "name": "prompt-enhancer",
+  "name": "magic-sparkle-prompt-engine",
+  "displayName": "Magic Sparkle Prompt Engine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Cross-browser extension that enriches LLM prompts using local context-scraping",
   "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "build:firefox": "plasmo build --target=firefox-mv3",
+    "package": "plasmo package",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "manifest": {
+    "host_permissions": [
+      "https://chat.openai.com/*",
+      "https://chatgpt.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*"
+    ],
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
   },
   "repository": {
     "type": "git",
@@ -25,5 +38,14 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.36",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   }
 }
