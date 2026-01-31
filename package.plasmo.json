@@ -1,0 +1,19 @@
+{
+  "name": "magic-sparkle-prompt-engine",
+  "displayName": "Magic Sparkle Prompt Engine",
+  "version": "1.0.0",
+  "description": "Cross-browser extension that enriches LLM prompts using local context-scraping with the Behemoth Pipeline",
+  "author": "Magic Sparkle Team",
+  "manifest": {
+    "host_permissions": [
+      "https://chat.openai.com/*",
+      "https://chatgpt.com/*",
+      "https://claude.ai/*",
+      "https://gemini.google.com/*"
+    ],
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
+  }
+}
