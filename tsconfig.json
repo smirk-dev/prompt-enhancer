@@ -1,6 +1,7 @@
 {
   "extends": "plasmo/templates/tsconfig.base",
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
