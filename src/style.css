@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Magic Sparkle Global Styles */
+:root {
+  --sparkle-gold: #FFD700;
+  --sparkle-gold-end: #FFA500;
+  --sparkle-cyan: #00F2FF;
+  --sparkle-red: #FF4444;
+  --sparkle-blue: #4488FF;
+  --sparkle-dark: rgba(26, 26, 26, 0.85);
+}
