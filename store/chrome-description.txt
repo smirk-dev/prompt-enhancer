@@ -1,0 +1,42 @@
+Magic Sparkle Prompt Engine transforms your short LLM prompts into comprehensive, expert-level instructions — instantly, privately, and with zero effort.
+
+HOW IT WORKS
+
+Type a short prompt like "fix this bug" on ChatGPT, Claude, or Gemini. Click the sparkle button (or press Alt+S). Magic Sparkle will:
+
+1. Detect which LLM platform you're using
+2. Scrape relevant context from the current page (title, URL, code blocks, headings)
+3. Assign an expert persona based on the page context (Software Engineer for GitHub, Researcher for arXiv, etc.)
+4. Wrap your prompt with Chain-of-Thought reasoning instructions
+5. Inject the enriched prompt back into the text input
+
+The result: 5x+ longer, context-rich prompts that get dramatically better first-shot responses.
+
+FEATURES
+
+- Smart Platform Detection — Automatically identifies ChatGPT, Claude, and Gemini
+- Context Heatmap — A visual glowing border on the input shows context readiness (red > blue > gold)
+- Behemoth Pipeline — Multi-agent synthesis with expert personas and structured reasoning
+- Shadow DOM Isolation — Zero CSS interference with host sites
+- Keyboard Shortcut — Alt+S for instant enhancement
+- Under 500ms — All processing happens locally with no network calls
+
+SUPPORTED PLATFORMS
+
+- ChatGPT (chat.openai.com, chatgpt.com)
+- Claude (claude.ai)
+- Gemini (gemini.google.com)
+
+PRIVACY
+
+All processing happens entirely on your device. No data is collected, transmitted, or stored. No accounts required. No analytics. See our full privacy policy on GitHub.
+
+PERMISSIONS
+
+- activeTab: Read page content to build context for prompt enhancement
+- storage: Save your local preferences
+
+OPEN SOURCE
+
+This extension is open source. View the code, report issues, or contribute at:
+https://github.com/smirk-dev/prompt-enhancer
