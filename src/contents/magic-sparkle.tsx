@@ -6,8 +6,8 @@
 
 import type { PlasmoCSConfig, PlasmoGetStyle, PlasmoGetShadowHostId } from 'plasmo';
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { createRoot } from 'react-dom/client';
 import { sendToBackground } from '@plasmohq/messaging';
+import cssText from 'data-text:~/style.css';
 
 import { SparkleFAB } from '~/components/SparkleFAB';
 import {
@@ -43,7 +43,8 @@ export const getShadowHostId: PlasmoGetShadowHostId = () => 'magic-sparkle-root'
 // Inject Tailwind styles into Shadow DOM
 export const getStyle: PlasmoGetStyle = () => {
   const style = document.createElement('style');
-  style.textContent = `
+  style.textContent = cssText + `
+
     /* Tailwind base reset for Shadow DOM */
     *, *::before, *::after {
       box-sizing: border-box;
