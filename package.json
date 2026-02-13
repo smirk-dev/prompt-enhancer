@@ -8,6 +8,8 @@
     "build": "plasmo build",
     "build:firefox": "plasmo build --target=firefox-mv3",
     "package": "plasmo package",
+    "package:firefox": "plasmo package --target=firefox-mv3",
+    "package:all": "plasmo build && plasmo package && plasmo build --target=firefox-mv3 && plasmo package --target=firefox-mv3",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -30,7 +32,7 @@
     "url": "git+https://github.com/smirk-dev/prompt-enhancer.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "smirk-dev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/smirk-dev/prompt-enhancer/issues"
