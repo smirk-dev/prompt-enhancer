@@ -6,8 +6,6 @@
 
 import type { PlasmoMessaging } from '@plasmohq/messaging';
 import type {
-  EnhanceRequestMessage,
-  EnhanceResponseMessage,
   PageContext,
   LLMPlatform
 } from '~/types';
